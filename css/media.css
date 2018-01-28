@@ -1,0 +1,82 @@
+
+@media only screen and (max-width : 1200px) {
+    .Header__menuWrap__list li:first-child, .Header__menuWrap__list li:nth-child(2){
+        margin-right: 12px;
+    }
+    .video_playOver{
+        display: none;
+    }
+}
+@media only screen and (max-width : 992px){
+    .Header__logoWrap{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header__mainHeaderWrap h1{
+        text-align: center;
+    }
+    .header__markerWrap{
+        text-align: center;
+    }
+    .header__firstParagrafWrap p{
+        text-align: center;
+    }
+    .header__secondParagrafWrap p{
+        text-align: center;
+    }
+    .header__bthPriceWrap{
+        text-align: center;
+    }
+    .header__manImgWrap{
+        display: none;
+    }
+    section.priceAndservice figure{
+        padding: 0px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    .comments figure{
+        margin-bottom: 50px;
+    }
+    .comments__figure__captionImg{
+        margin-bottom: 10px;
+    }
+    .contact__formWraper,.custom_selectWrap {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width : 576px){
+    .Header__LangSelectWrap{
+        margin-top: 20px
+    }
+    .priceAndserviceItem__headerRow__iWrap{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

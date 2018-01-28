@@ -1,0 +1,915 @@
+/*resetc ss*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    position: relative;
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+input,
+textarea,
+button {
+    outline: none;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: "GothaProReg";
+    src: url("../Fonts/Gotham Cyrillic/GothaProReg.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothaProBla";
+    src: url("../Fonts/Gotham Cyrillic/GothaProBla.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothaProBol";
+    src: url("../Fonts/Gotham Cyrillic/GothaProBol.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BanderaPro";
+    src: url("../Fonts/BanderaPro-Bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* main style */
+
+body {
+    font-family: "GothaProReg";
+}
+
+body a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header.header {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 1;
+}
+
+.Header__menuWrap__list {
+    text-align: center;
+}
+
+.Header__menuWrap__list li {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #3f4147;
+    font-size: 12px;
+    font-family: "GothaProBol";
+    cursor: pointer;
+}
+
+.Header__menuWrap__list li:hover {
+    color: #bc4a86;
+}
+
+.Header__menuWrap__list li:first-child,
+.Header__menuWrap__list li:nth-child(2) {
+    margin-right: 26px;
+}
+
+.Header__menuWrap {
+    margin-top: 10px
+}
+
+.Header__LangSelectWrap {
+    margin-top: 6px;
+}
+
+.Header__LangSelectWrap__swicher {
+    border: 2px solid #dfdfe2;
+    text-align: center;
+    font-family: "GothaProBla";
+    font-size: 12px;
+    color: #a70c5d;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 18px;
+    position: relative;
+}
+
+.Header__LangSelectWrap__swicher a {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Header__LangSelectWrap__swicher a:first-child {
+    margin-right: 8px;
+}
+
+.Header__LangSelectWrap__swicher .circlSwich {
+    width: 22px;
+    height: 22px;
+    background-color: #dfdfe2;
+    display: block;
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+    top: 3px;
+    left: 6px;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+.Header__LangSelectWrap__swicher a.swicher_animate {
+    left: 36px;
+}
+
+.header__mainHeaderWrap h1 {
+    font-family: "GothaProBol";
+    font-size: 30px;
+    color: #3f4147;
+    margin-top: 86px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.header__markerWrap span {
+    display: inline-block;
+    width: 38px;
+    height: 2px;
+    background-color: #a70c5d;
+    margin-bottom: 30px;
+}
+
+.header__firstParagrafWrap p {
+    font-size: 15px;
+    color: #3f4147;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.header__secondParagrafWrap p {
+    font-size: 15px;
+    color: #3f4147;
+    line-height: 1.5;
+    margin-bottom: 58px;
+    line-height: 1.5;
+}
+
+.header__secondParagrafWrap b {
+    font-family: "GothaProBol";
+}
+
+.header__bthPriceWrap button {
+    border: none;
+    background-color: #a70c5d;
+    width: 178px;
+    height: 48px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "GothaProBol";
+    color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header__bthPriceWrap i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.header__bthPriceWrap i,
+.header__bthPriceWrap span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/*.header:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("../img/man.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 90%;
+    background-size: 33%;
+    z-index: -1;
+}*/
+
+.priceAndservice {
+    padding-top: 58px;
+    color: #3f4147;
+}
+
+.priceAndservice__header {
+    margin-bottom: 20px;
+}
+
+.priceAndservice__header h2 {
+    font-family: "GothaProBol";
+    font-size: 30px;
+    color: #3f4147;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.priceAndservice__marker {
+    text-align: center;
+}
+
+.priceAndservice__marker {
+    margin-bottom: 20px;
+}
+
+.priceAndservice__marker span {
+    display: inline-block;
+    width: 38px;
+    height: 2px;
+    background-color: #a70c5d;
+}
+
+.priceAndservice__paragraf p {
+    text-align: center;
+}
+
+.priceAndservice__paragraf p {
+    font-size: 15px;
+    color: #3f4147;
+    line-height: 1.5;
+    margin-bottom: 114px;
+}
+
+.priceAndservice__paragraf b {
+    font-family: "GothaProBol";
+}
+
+.priceAndserviceItem__headerRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.priceAndserviceItem__headerRow__iconWrap {
+    margin-right: 30px;
+    position: relative;
+    -ms-flex-preferred-size: 40px;
+        flex-basis: 40px;
+}
+
+.priceAndserviceItem__headerRow__headerWrap {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "GothaProBol";
+    padding-top: 6px;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    line-height: 1.3
+}
+
+.priceAndserviceItem__headerRow__iWrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #a70c5d;
+    font-family: "BanderaPro";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.priceAndserviceItem__headerRow__iWrap a {
+    width: 100%;
+    text-align: center;
+}
+
+figcaption.priceAndserviceItem_1__caption ul {
+    list-style-image: url("../img/List-imgpng.png");
+    /*! list-style-position:inside ; */
+    font-size: 15px;
+}
+
+figcaption.priceAndserviceItem_1__caption li {
+    margin-bottom: 10px;
+    margin-left: 16px;
+    line-height: 1.5;
+}
+
+figcaption.priceAndserviceItem_1__caption p {
+    margin-bottom: 10px;
+}
+
+figcaption.priceAndserviceItem_1__caption {
+    padding-left: 68px;
+}
+
+.priceAndserviceItem_1 {
+    padding-right: 70px;
+}
+
+.priceAndserviceItem_2 {
+    padding-left: 70px;
+}
+
+.priceAndserviceItem_3 {
+    padding-right: 70px;
+    margin-top: 76px;
+}
+
+.priceAndserviceItem_4 {
+    padding-left: 70px;
+    margin-top: 76px;
+}
+
+.priceAndservice figure img {
+    cursor: pointer;
+}
+
+.priceAndserviceItem__headerRow__iconWrap a {
+    position: absolute;
+}
+
+.priceAndserviceItem__headerRow__iconWrap:hover + div + div {
+    background-color: #a70c5d;
+    color: #ffffff;
+}
+
+.priceAndserviceItem__headerRow__iconWrap a:hover {
+    opacity: 0;
+}
+
+section.comments {
+    margin-top: 86px;
+}
+
+.comments__header {
+    margin-bottom: 20px;
+}
+
+.comments .comments__header h2 {
+    font-family: "GothaProBol";
+    font-size: 30px;
+    color: #3f4147;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.comments__marker {
+    margin-bottom: 20px;
+}
+
+.comments__marker span {
+    display: inline-block;
+    width: 38px;
+    height: 2px;
+    background-color: #a70c5d;
+}
+
+.comments__marker {
+    text-align: center;
+}
+
+.comments__paragraf p {
+    font-size: 15px;
+    color: #3f4147;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.comments__paragraf p b {
+    font-family: "GothaProBol";
+}
+
+.comments__figure__brackets span {
+    font-family: "GothaProBol";
+    font-size: 40px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    display: inline-block;
+    margin-bottom: -10px;
+    color: #c9cacf;
+    cursor: pointer;
+}
+
+.comments__figure__commentCcontent p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #3f4147;
+}
+
+.comments__figure__commentCcontent {
+    margin-bottom: 30px;
+}
+
+.comments__figure__captionImg img {
+    border-radius: 50%;
+}
+
+.comments__figure__captionImg {
+    margin-bottom: 44px;
+}
+
+.comments__figure__captioName span {
+    font-size: 13px;
+    font-family: "GothaProBol";
+    color: #3f4147;
+}
+
+.comments__figure__captioName {
+    margin-bottom: 10px;
+}
+
+.comments__figure__captionCompany {
+    color: #3f4147;
+    font-size: 13px;
+}
+
+.comments__figure__captionCompany span:nth-child(2) {
+    color: #a70c5d;
+    font-size: 40px;
+    display: inline-block;
+    margin-top: -18px;
+    vertical-align: bottom;
+}
+
+.comments__figure__captionCompany span:nth-child(3) {
+    font-family: "GothaProBol";
+}
+
+.comments__figure_hover {
+    color: #a70c5d !important;
+}
+
+div.video img {
+    width: 100%;
+}
+
+div.video a {
+    display: block;
+}
+
+span.youtube i {
+    font-size: 20px;
+}
+
+.load_more {
+    margin-top: 62px;
+    font-family: "GothaProBol";
+    font-size: 15px;
+    text-align: center;
+}
+
+.load_more img,
+.load_more a {
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+@-webkit-keyframes example {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes example {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+.load_more img {
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.load_more img {
+    -webkit-animation-name: example;
+            animation-name: example;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+section.contact {
+    margin-top: 58px;
+}
+
+.contact__header {
+    font-family: "GothaProBol";
+    font-size: 30px;
+    color: #3f4147;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact__marker {
+    text-align: center;
+    margin-bottom: 56px;
+    margin-top: 20px;
+}
+
+.contact__marker span {
+    display: inline-block;
+    width: 38px;
+    height: 2px;
+    background-color: #a70c5d;
+}
+
+input {
+    border: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    font-family: "GothaProBol";
+    padding-bottom: 10px;
+    margin-top: 34px;
+    color: #3f4147;
+}
+
+.contact__formWraper input {
+    border-bottom: 1px solid #d1d2d4;
+}
+
+.contact__formWraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.contact__formWraper form,
+.custom_select {
+    -ms-flex-preferred-size: 380px;
+        flex-basis: 380px;
+}
+
+.textarea_wraper {
+    margin-top: 30px;
+}
+
+.textarea_wraper textarea {
+    margin-right: 0px;
+    width: 100%;
+    font-size: 15px;
+    font-family: "GothaProBol";
+    min-height: 238px;
+    border: 1px solid #d1d2d4;
+    padding-left: 10px;
+    color: #3f4147;
+}
+
+.textarea_wraper span {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "GothaProBol";
+    color: #3f4147;
+}
+
+.custom_select .select_head {
+    border: 1px solid #d1d2d4;
+}
+
+.custom_selectWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.select_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 18px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "GothaProBol";
+    color: #7f8084;
+}
+
+.sel_openClose_marcer i {
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.sel_content span {
+    margin-top: 6px;
+    display: inline-block;
+    color: #3f4147;
+}
+
+.select_body ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.select_body ul li {
+    font-size: 15px;
+    color: #7f8084;
+    font-family: "GothaProBol";
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+.select_body ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.select_body {
+    padding: 22px 0px 22px 22px;
+    border-left: 1px solid #d1d2d4;
+    border-right: 1px solid #d1d2d4;
+    border-bottom: 1px solid #d1d2d4;
+    display: none;
+}
+
+.select_body ul li:hover{
+    color: #a70c5d;
+}
+.select_body_iconSpin{
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.form_button_submitWrap{
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 60px;
+}
+.form_button_submitWrap button{
+    border: none;
+    background-color: #a70c5d;
+    width: 178px;
+    height: 48px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "GothaProBol";
+    color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.adress_wrap p{
+    text-align: center;
+}
+.adress_wrap p{
+    margin-bottom: 16px;
+}
+.adress_wrap p:first-child{
+    font-family: "GothaProBol";
+    font-size: 13px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
+.adress_wrap .adress, p.telefon{
+    font-size: 18px;
+    color: #3f4147;
+}
+.adress_wrap .url_adress a{
+    color: #A70C5D;
+    border-bottom: 1px solid #A70C5D;
+}
+.social_icon_wrap{
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.social_icon_wrap a{
+    border: 2px solid #dcdcdc;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    padding: 8px;
+    color: #dcdcdc;
+}
+.social_icon_wrap a:hover{
+    border: 2px solid #5878bc;
+    color: #5878bc;
+}
+.copy_right_wrap{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.copy_right_wrap b{
+    font-family: "GothaProBol";
+}
+.priceAndservice figcaption p{
+    line-height: 1.5;
+}
+.video_playOver{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.play_btn_wrap{
+    width: 96px;
+    height: 96px;
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 99;
+}
+.play_btn_wrap{
+    text-align: center;
+}
